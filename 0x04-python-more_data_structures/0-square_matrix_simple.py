@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = [[], [], []]
-    for i in range(3):
-        for column in matrix[i]:
-            new_matrix[i].append(column**2)
+    new_matrix = [[column**2 for column in row] for row in matrix]
     return new_matrix
+
