@@ -4,5 +4,3 @@ def best_score(a_dictionary):
     for key in a_dictionary:
         if a_dictionary[key] == value[-1]:
             return key
-        else:
-            return "None"
